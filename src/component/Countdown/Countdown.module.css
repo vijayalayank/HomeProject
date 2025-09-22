@@ -1,0 +1,45 @@
+.countdowncontainer {
+  text-align: center;
+  padding: 2rem;
+  /* background-color: #fffde7; light yellow background */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f59e0b; /* golden yellow */
+  margin-bottom: 1.5rem;
+}
+
+.countdowngrid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.countdownbox {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+}
+
+.number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.label {
+  font-size: 1rem;
+  color: #444;
+}
+
+.finished {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #22c55e; /* green */
+}
