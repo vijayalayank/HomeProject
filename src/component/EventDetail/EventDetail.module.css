@@ -1,0 +1,117 @@
+.main{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.details{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding:1rem;
+    width: 70%;
+}
+
+
+.one,.two{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding:1rem;
+    width: 50%;
+    height:100%;
+    box-shadow: 5px 5px 10px #F9BC06;
+    border-radius: 1rem;
+}
+
+.DateTime,.VenueContact{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: start;
+}
+
+.DateTime span{
+font-size: 1.9rem;
+color: #F9BC06;
+margin-top: 5px;
+}
+
+.VenueContact span{
+    font-size: 1.9rem;
+color: #F9BC06;
+margin-top: 5px;
+}
+
+.DateTime,.VenueContact h1{
+    color: #F9BC06;
+}
+
+.date h2{
+    /* margin-left: 100px; */
+    color: #F9BC06;
+}
+
+.date p{
+    margin-left: 40px;
+    font-size:1.1rem;
+}
+
+.Schedule h2{
+    color: #F9BC06;
+
+}
+
+.Schedule ul li{
+    list-style: none;
+    margin-left: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.Schedule ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.Address{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+}
+
+.Address h2{
+    color: #F9BC06;
+}
+
+.Address p{
+    margin-left:35px;
+    font-size:1.1rem;
+}
+
+.Address button{
+    margin-left: 35px;
+    padding: 0.5rem;
+    background-color: #ffbf00;
+    border: none;
+    border-radius: 6px;
+    /* font-size: 1rem; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.Contact h2{
+    color: #F9BC06;
+}
+
+.Contact p{
+    margin-left: 35px;
+}

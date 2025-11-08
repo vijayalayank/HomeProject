@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 .main{
     display: flex;
     justify-content: center;
@@ -42,11 +44,13 @@
 
 .heading{
     font-size: 4.5rem;
-    color: gold;
+    color: #F9BC06;
 }
 
 .sub{
-    font-size: 2rem;
+    font-size: 1.7rem;
+      font-family: "SUSE Mono", sans-serif;
+
 }
 
 .quote{
@@ -57,8 +61,16 @@
 .view{
     padding: 10px;
     border-radius: 0.7rem;
-    background-color: gold;
+    background-color: #F9BC06;
     border: none;
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
+   
+    cursor: pointer;
 }
+
+.view a{
+     font-size: 1.5rem;
+  font-family: "SUSE Mono", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+

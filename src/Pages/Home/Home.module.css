@@ -1,12 +1,9 @@
 .contain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    border: 2px solid black;
+background: #DEE0B8;
+background: linear-gradient(180deg, rgba(222, 224, 184, 1) 0%, rgba(255, 255, 255, 1) 34%);
+
 }
 
-.title{
-    color:red;
-    font-size: 1rem;
+html {
+  scroll-behavior: smooth;
 }

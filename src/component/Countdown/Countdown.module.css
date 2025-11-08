@@ -1,6 +1,10 @@
 .countdowncontainer {
   text-align: center;
   padding: 2rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* background-color: #fffde7; light yellow background */
 }
 
