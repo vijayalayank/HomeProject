@@ -74,3 +74,107 @@
     text-decoration: none;
 }
 
+
+/* 💻 Large screens (Laptops & Desktops ≥1024px) */
+/* default styles are already fine */
+
+/* 📱 Tablets (768px – 1023px) */
+@media (max-width: 1023px) {
+  .main {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .sub {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .contain {
+    padding: 2rem;
+    width: 85%;
+  }
+
+  .view a {
+    font-size: 1.2rem;
+  }
+}
+
+/* 📲 Mobiles (425px – 767px) */
+@media (max-width: 767px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .sub {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .contain {
+    padding: 1.5rem;
+    width: 80%;
+  }
+
+  .view {
+    width: 100%;
+  }
+
+  .view a {
+    font-size: 1.1rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* 📱 Small Mobiles (≤424px) */
+@media (max-width: 424px) {
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sub {
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .contain {
+    padding: 1rem;
+    width: 70%;
+    border-radius: 0.8rem;
+  }
+
+  .view a {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
