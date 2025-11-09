@@ -33,3 +33,81 @@
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+/* ============================== */
+/* 📱 Responsive Media Queries */
+/* ============================== */
+
+/* Tablet view (≤1024px) */
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile view (≤768px) */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1.5rem;
+    min-height: 60vh;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1rem;
+    max-width: 90%;
+    line-height: 1.5;
+  }
+
+  .footer {
+    font-size: 0.95rem;
+  }
+
+  .family {
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile view (≤480px) */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 1rem;
+    min-height: 70vh;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .message {
+    font-size: 0.95rem;
+    max-width: 95%;
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .family {
+    font-size: 0.95rem;
+  }
+}

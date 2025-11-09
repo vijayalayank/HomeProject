@@ -1,5 +1,4 @@
-.main{
-    /* border: 2px solid; */
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,111 +6,209 @@
     min-height: 100vh;
 }
 
-.details{
-    /* border: 2px solid red; */
+.details {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
-    padding:1rem;
+    padding: 1rem;
     width: 70%;
 }
 
-
-.one,.two{
+.one,
+.two {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: space-between;
-    /* align-items: center; */
-    padding:1rem;
+    padding: 1rem;
     width: 50%;
-    height:100%;
     box-shadow: 5px 5px 10px #F9BC06;
     border-radius: 1rem;
 }
 
-.DateTime,.VenueContact{
+.DateTime,
+.VenueContact {
     display: flex;
     align-items: center;
     gap: 0.7rem;
     justify-content: start;
 }
 
-.DateTime span{
-font-size: 1.9rem;
-color: #F9BC06;
-margin-top: 5px;
-}
-
-.VenueContact span{
+.DateTime span,
+.VenueContact span {
     font-size: 1.9rem;
-color: #F9BC06;
-margin-top: 5px;
+    color: #F9BC06;
+    margin-top: 5px;
 }
 
-.DateTime,.VenueContact h1{
+.DateTime h1,
+.VenueContact h1 {
     color: #F9BC06;
 }
 
-.date h2{
-    /* margin-left: 100px; */
+.date h2,
+.Schedule h2,
+.Address h2,
+.Contact h2 {
     color: #F9BC06;
 }
 
-.date p{
+.date p {
     margin-left: 40px;
-    font-size:1.1rem;
+    font-size: 1.1rem;
 }
 
-.Schedule h2{
-    color: #F9BC06;
-
+.Schedule ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.Schedule ul li{
+.Schedule ul li {
     list-style: none;
     margin-left: 2.5rem;
     font-size: 1.1rem;
 }
 
-.Schedule ul{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
-}
-
-.Address{
+.Address {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     align-items: start;
 }
 
-.Address h2{
-    color: #F9BC06;
+.Address p {
+    margin-left: 35px;
+    font-size: 1.1rem;
 }
 
-.Address p{
-    margin-left:35px;
-    font-size:1.1rem;
-}
-
-.Address button{
+.Address button {
     margin-left: 35px;
     padding: 0.5rem;
     background-color: #ffbf00;
     border: none;
     border-radius: 6px;
-    /* font-size: 1rem; */
-    text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.Contact h2{
-    color: #F9BC06;
+.Address button:hover {
+    background-color: #f7cd4d;
 }
 
-.Contact p{
+.Contact p {
     margin-left: 35px;
+}
+
+/* =================================== */
+/* 📱 Responsive Media Queries Section */
+/* =================================== */
+
+/* Tablet view (≤ 1024px) */
+@media (max-width: 1024px) {
+    .details {
+        width: 85%;
+        gap: 1.5rem;
+    }
+
+    .one,
+    .two {
+        width: 48%;
+        gap: 1.5rem;
+    }
+
+    .date p,
+    .Schedule ul li,
+    .Address p,
+    .Contact p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile view (≤ 768px) */
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .one,
+    .two {
+        width: 75%;
+        box-shadow: 3px 3px 6px #f9bc06;
+    }
+
+    .DateTime h1,
+    .VenueContact h1 {
+        font-size: 1.3rem;
+    }
+
+    .date p,
+    .Schedule ul li,
+    .Address p,
+    .Contact p {
+        margin-left: 20px;
+    }
+
+    .Address button {
+        margin-left: 20px;
+        width: 50%;
+        text-align: center;
+        /* align-self: center; */
+    }
+}
+
+/* Small mobile view (≤ 480px) */
+@media (max-width: 480px) {
+    .main {
+        padding: 0.5rem;
+    }
+
+    .details {
+        width: 75%;
+        padding: 0.5rem;
+        gap: 2rem;
+    }
+
+    .one,
+    .two {
+        /* padding: 0.8rem; */
+        border-radius: 0.7rem;
+        gap: 1.2rem;
+        width: 90%;
+    }
+
+    .DateTime span,
+    .VenueContact span {
+        font-size: 1.5rem;
+    }
+
+    .DateTime h1,
+    .VenueContact h1 {
+        font-size: 1.1rem;
+    }
+
+    .date h2,
+    .Schedule h2,
+    .Address h2,
+    .Contact h2 {
+        font-size: 1rem;
+    }
+
+    .date p,
+    .Schedule ul li,
+    .Address p,
+    .Contact p {
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+
+    .Address button {
+        width: 50%;
+        margin-left: 0;
+        font-size: 0.9rem;
+        align-self: center;
+    }
 }

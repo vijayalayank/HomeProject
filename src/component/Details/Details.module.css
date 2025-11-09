@@ -1,12 +1,11 @@
-.main{
-    /* border: 2px solid red; */
+.main {
     display: flex;
     justify-content: center;
     padding: 1rem;
     min-height: 70vh;
 }
-.contain{
-    /* border: 2px solid green; */
+
+.contain {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -14,22 +13,21 @@
     gap: 3rem;
     justify-content: center;
 }
-.heading{
+
+.heading {
     text-align: center;
     font-size: 1.6rem;
     color: #F9BC06;
 }
-.time{
-    /* border: 2px solid black; */
+
+.time {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
     padding: 1rem;
-
 }
 
-.one{
-    /* border: 2px solid red; */
+.one {
     box-shadow: 2px 3px 5px #F9BC06;
     border-radius: 1rem;
     width: 50%;
@@ -40,29 +38,90 @@
     gap: 3rem;
 }
 
-.sub1{
+.sub1 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.sub1 .item{
+.sub1 .item {
     display: flex;
-    /* flex-direction: column; */
-    gap:1rem;
+    gap: 1rem;
 }
-.two{
+
+.two {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    /* border: 2px solid red; */
     padding: 1rem;
     box-shadow: 2px 3px 5px #F9BC06;
     width: 50%;
     border-radius: 1rem;
 }
 
-.sub2{
+.sub2 {
     display: flex;
     gap: 1rem;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+    .contain {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .time {
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .time {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .one,
+    .two {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small mobile view */
+@media (max-width: 480px) {
+    .contain {
+        width: 75%;
+        padding: 0.5rem;
+    }
+
+    .one,
+    .two {
+        width: 100%;
+        padding: 0.8rem;
+        gap: 2rem;
+    }
+
+    .heading h1 {
+        font-size: 1.1rem;
+    }
+
+    .sub1 .item p,
+    .sub2 p {
+        font-size: 0.9rem;
+    }
 }
